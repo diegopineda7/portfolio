@@ -28,7 +28,7 @@ export default function Contacto() {
             <h3>Instagram</h3>
           </div>
         </a>
-        <a rel="noopener noreferrer" target='_blank' href=''>
+        <a rel="noopener noreferrer" target='_blank' href='https://api.whatsapp.com/send?phone=+573125285909'>
           <div className='social'>
             <img src={whatsapp} alt='WhatsApp' />
             <h3>WhatsApp</h3>

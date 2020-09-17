@@ -6,13 +6,13 @@
       {
         "id": 0,
         "name": "Claudia (Chatbot)",
-        "github": "",
+        "Github": "",
         "image": "",
         "frameworks": [
-          "RJS",
-          "NODE",
-          "GIT",
-          "POSTGRES"
+          "Node.js",
+          "React JS",
+          "PostgreSQL",
+          "Git"
         ],
         "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS."
       }
@@ -25,27 +25,27 @@
       {
         "id": 0,
         "name": "YouTrain",
-        "github": "",
+        "Github": "",
         "image": "",
         "frameworks": [
-          "RN",
-          "NODE",
-          "MONGO",
-          "GIT"
+          "Node.js",
+          "React Native",
+          "MongoDB",
+          "Git"
         ],
         "description": "Aplicación móvil para la creación de planes de entrenamiento personalizados."
       },
       {
         "id": 1,
         "name": "QR Attendance",
-        "github": "",
+        "Github": "",
         "image": "",
         "frameworks": [
-          "RN",
-          "RJS",
-          "NODE",
-          "GIT",
-          "SHEETS"
+          "Node.js",
+          "React Native",
+          "React JS",
+          "Google Sheets",
+          "Git"
         ],
         "description": "Aplicacion móvil para el control de asistencia al congreso de Regencia organizado por el IPRED - UIS."
       }

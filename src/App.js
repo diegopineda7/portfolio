@@ -15,13 +15,13 @@ import Contacto from './Contacto';
 import Project from './Project';
 
 const logos = {
-  RJS: logoRJS,
-  RN: logoRN,
-  NODE: logoNODE,
-  GIT: logoGIT,
-  MONGO: logoMONGO,
-  POSTGRES: logoPG,
-  SHEETS: logoSHEETS,
+  'React JS': logoRJS,
+  'React Native': logoRN,
+  'Node.js': logoNODE,
+  'Git': logoGIT,
+  'MongoDB': logoMONGO,
+  'PostgreSQL': logoPG,
+  'Google Sheets': logoSHEETS,
 }
 const logosKeys = Object.keys(logos);
 const logosValues = Object.values(logos);

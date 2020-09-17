@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 export default function Project(props) {
   const { project, logosKeys, logosValues } = props;
@@ -18,12 +20,14 @@ export default function Project(props) {
             const index = logosKeys.indexOf(framework);
             const logo = logosValues[index];
             return (
-              <img
-                key={framework}
-                src={logo}
-                alt={framework}
-                className='logoFramework'
-              />
+              <Tippy content={framework} placement='bottom'>
+                <img
+                  key={framework}
+                  src={logo}
+                  alt={framework}
+                  className='logoFramework'
+                />
+              </Tippy>
             )
           })
         }
