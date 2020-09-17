@@ -5,6 +5,18 @@
     "projects": [
       {
         "id": 0,
+        "name": "React Basic",
+        "github": "https://github.com/diegopineda7/react-basic",
+        "image": "",
+        "frameworks": [
+          "Node.js",
+          "React JS",
+          "Git"
+        ],
+        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Counter, Clock, Fetch data, Hooks)."
+      },
+      {
+        "id": 1,
         "name": "Claudia (Chatbot)",
         "github": "",
         "image": "",
@@ -15,18 +27,6 @@
           "Git"
         ],
         "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS."
-      },
-      {
-        "id": 1,
-        "name": "React Basic",
-        "github": "https://github.com/diegopineda7/react-basic",
-        "image": "",
-        "frameworks": [
-          "Node.js",
-          "React JS",
-          "Git"
-        ],
-        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Counter, Clock, Fetch data, Hooks)."
       }
     ]
   },
@@ -59,7 +59,7 @@
           "Google Sheets",
           "Git"
         ],
-        "description": "Aplicacion móvil para el control de asistencia al congreso de Regencia organizado por el IPRED - UIS."
+        "description": "Aplicacion móvil para el control de asistencia al V Congreso Internacional en Regencia de Farmacia organizado por el IPRED - UIS."
       },
       {
         "id": 2,
@@ -73,6 +73,19 @@
           "Git"
         ],
         "description": "Aplicación móvil para controlar el progreso en ejercicios de rutinas de entrenamiento."
+      },
+      {
+        "id": 2,
+        "name": "Contact App",
+        "github": "https://github.com/diegopineda7/contact-manager",
+        "image": "",
+        "frameworks": [
+          "Node.js",
+          "React Native",
+          "Firebase",
+          "Git"
+        ],
+        "description": "Aplicación móvil de agenda de contactos. Permite llamar y enviar mensajes de texto."
       }
     ]
   }

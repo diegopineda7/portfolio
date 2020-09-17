@@ -9,6 +9,7 @@ import logoRN from './assets/react-native.png';
 import logoNODE from './assets/node.png';
 import logoGIT from './assets/git.png';
 import logoMONGO from './assets/mongo.png';
+import logoFIREBASE from './assets/firebase.png';
 import logoPG from './assets/postgres.png';
 import logoSHEETS from './assets/sheets.png';
 import Contacto from './Contacto';
@@ -20,6 +21,7 @@ const logos = {
   'Node.js': logoNODE,
   'Git': logoGIT,
   'MongoDB': logoMONGO,
+  'Firebase': logoFIREBASE,
   'PostgreSQL': logoPG,
   'Google Sheets': logoSHEETS,
 }
