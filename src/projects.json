@@ -1,26 +1,54 @@
 [
   {
     "id": 0,
-    "name": "YouTrain",
-    "github": "",
-    "image": "",
-    "frameworks": "RN, JS, NODE, MONGO, GIT",
-    "description": "Aplicación móvil para la creación de planes de entrenamiento perosanlizados."
+    "section": "APPS WEB",
+    "projects": [
+      {
+        "id": 0,
+        "name": "Claudia (Chatbot)",
+        "github": "",
+        "image": "",
+        "frameworks": [
+          "RJS",
+          "NODE",
+          "GIT",
+          "POSTGRES"
+        ],
+        "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS."
+      }
+    ]
   },
   {
     "id": 1,
-    "name": "Claudia (Chatbot)",
-    "github": "",
-    "image": "",
-    "frameworks": "HTML, CSS, JS, NODE, GIT, SQL",
-    "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS."
-  },
-  {
-    "id": 2,
-    "name": "QR Attendance",
-    "github": "",
-    "image": "",
-    "frameworks": "RN, RJS, NODE, GIT, GOOGLE",
-    "description": "Aplicacion móvil para el control de asistencia al congreso de Regencia organizado por el IPRED - UIS."
+    "section": "APPS MOVILES",
+    "projects": [
+      {
+        "id": 0,
+        "name": "YouTrain",
+        "github": "",
+        "image": "",
+        "frameworks": [
+          "RN",
+          "NODE",
+          "MONGO",
+          "GIT"
+        ],
+        "description": "Aplicación móvil para la creación de planes de entrenamiento perosanlizados."
+      },
+      {
+        "id": 1,
+        "name": "QR Attendance",
+        "github": "",
+        "image": "",
+        "frameworks": [
+          "RN",
+          "RJS",
+          "NODE",
+          "GIT",
+          "SHEETS"
+        ],
+        "description": "Aplicacion móvil para el control de asistencia al congreso de Regencia organizado por el IPRED - UIS."
+      }
+    ]
   }
 ]

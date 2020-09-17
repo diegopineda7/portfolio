@@ -1,5 +1,9 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+} 
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,6 +11,112 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #3e3074;
+  width: 100%;
+  height: 45px;
+  z-index: 1;
+}
+
+.menu .navLink {
+  text-decoration: none;
+  margin: 0 25px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #fff;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h3 {
+  margin-top: 25px;
+}
+
+.projects {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e6e6e6;
+}
+
+.contact {
+  width: 100%;
+  height: 35vh;
+  background-color: red;
+}
+
+.contact .contactContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.projectsVisible {
+  margin-top: 55px;
+}
+
+.projectsList {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 25px;
+  margin: 15px 35px;
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 225px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+}
+
+.logoFramework {
+  width: 25px;
+  padding: 0 5px;
+}
+
+.contact img {
+  width: 95px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1115px) {
+  .projectsList {
+    grid-template-columns: 49% 49%;
+  }
 }
