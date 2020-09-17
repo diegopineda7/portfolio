@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import projects from './projects.json';
 
 function App() {
+  console.log(projects);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='menu'>
+        | PROYECTOS | HABILIDADES | CONTACTO
+      </div>
+      <h1>DIEGO ALBERTO PINEDA MEDINA</h1>
+      <h3>DESARROLLLO WEB Y MÓVIL</h3>
+      <div className='projects'>
+        {
+          projects.map(item => (
+            <div className='projectItem' key={item.id}>
+              <h2>{item.name}</h2>
+              <p>{item.description}</p>
+              <p>{item.frameworks}</p>
+            </div>
+          ))
+        }
+      </div>
     </div>
   );
 }
