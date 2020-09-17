@@ -4,7 +4,7 @@ import 'tippy.js/dist/tippy.css';
 
 export default function Project(props) {
   const { project, logosKeys, logosValues } = props;
-  const { name, img, description, frameworks } = project;
+  const { name, img, github, description, frameworks } = project;
   return (
     <div className='projectItem'>
       <h2>{name}</h2>
@@ -32,6 +32,14 @@ export default function Project(props) {
           })
         }
       </div>
+      <a
+        rel="noopener noreferrer"
+        target='_blank'
+        href={github}
+        className='ghButton'
+      >
+        Repositorio Github
+      </a>
     </div>
   )
 }

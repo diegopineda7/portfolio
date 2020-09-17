@@ -6,7 +6,7 @@
       {
         "id": 0,
         "name": "Claudia (Chatbot)",
-        "Github": "",
+        "github": "",
         "image": "",
         "frameworks": [
           "Node.js",
@@ -15,6 +15,18 @@
           "Git"
         ],
         "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS."
+      },
+      {
+        "id": 1,
+        "name": "React Basic",
+        "github": "",
+        "image": "",
+        "frameworks": [
+          "Node.js",
+          "React JS",
+          "Git"
+        ],
+        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo, Counter, Clock, Fetch data, Hooks)."
       }
     ]
   },
@@ -25,7 +37,7 @@
       {
         "id": 0,
         "name": "YouTrain",
-        "Github": "",
+        "github": "",
         "image": "",
         "frameworks": [
           "Node.js",
@@ -38,7 +50,7 @@
       {
         "id": 1,
         "name": "QR Attendance",
-        "Github": "",
+        "github": "",
         "image": "",
         "frameworks": [
           "Node.js",

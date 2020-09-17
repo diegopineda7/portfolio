@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <Menu />
-      <div className='banner'>
+      <div className='banner' id='home'>
         <h1>DIEGO ALBERTO PINEDA MEDINA</h1>
         <h2>BIENVENIDO(A) A MI PORTAFOLIO</h2>
         <div className='skills'>
