@@ -1,6 +1,8 @@
 import React from 'react';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import logoGH from './assets/github.png';
+import lock from './assets/lock.png';
 
 export default function Project(props) {
   const { project, logosKeys, logosValues } = props;
@@ -32,14 +34,30 @@ export default function Project(props) {
           })
         }
       </div>
-      <a
-        rel="noopener noreferrer"
-        target='_blank'
-        href={github}
-        className='ghButton'
-      >
-        Repositorio Github
-      </a>
+      {
+        github !== ''
+          ? <a
+            rel="noopener noreferrer"
+            target='_blank'
+            href={github}
+            className='ghButton'
+          >
+            <img
+              src={logoGH}
+              alt='Repositorio GitHub'
+              className='logoFramework'
+            />
+              Repositorio GitHub
+          </a>
+          : <p className='privateButton'>
+            <img
+              src={lock}
+              alt='Repositorio privado'
+              className='logoFramework'
+            />
+            Proyecto privado
+          </p>
+      }
     </div>
   )
 }
