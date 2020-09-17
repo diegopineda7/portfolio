@@ -43,7 +43,7 @@ html {
 .banner {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,6 +52,18 @@ html {
 
 .banner h3 {
   margin-top: 25px;
+}
+
+.banner .skills {
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner .skills img {
+  width: 65px;
 }
 
 .projects {
@@ -65,8 +77,8 @@ html {
 
 .contact {
   width: 100%;
-  height: 35vh;
-  background-color: red;
+  padding: 55px 0;
+  background-color: #f0e6b0;
 }
 
 .contact .contactContent {
@@ -77,7 +89,7 @@ html {
 }
 
 .projectsVisible {
-  margin-top: 55px;
+  margin: 55px 0;
 }
 
 .projectsList {
@@ -95,11 +107,19 @@ html {
   height: 225px;
   background-color: white;
   border-radius: 8px;
+  padding: 15px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
+}
+
+.projectFrameworks {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .logoFramework {
@@ -113,10 +133,17 @@ html {
 
 .contact a {
   text-decoration: none;
+  color: black;
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 800px) {
   .projectsList {
     grid-template-columns: 49% 49%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projectsList {
+    grid-template-columns: auto;
   }
 }
