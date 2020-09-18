@@ -132,7 +132,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 265px;
+  height: 355px;
   background-color: white;
   border-radius: 8px;
   padding: 20px;
@@ -141,6 +141,11 @@ html {
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
+}
+
+.projectItem .projectImg {
+  margin: 15px;
+  height: 95px;
 }
 
 .projectItem p {

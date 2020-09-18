@@ -6,19 +6,25 @@ import 'tippy.js/dist/tippy.css';
 import projects from './projects.json';
 import Menu from './Menu';
 // FRAMEWORK LOGOS
-import logoRJS from './assets/react.png';
-import logoRN from './assets/react-native.png';
-import logoNODE from './assets/node.png';
-import logoGIT from './assets/git.png';
-import logoMONGO from './assets/mongo.png';
-import logoFIREBASE from './assets/firebase.png';
-import logoPG from './assets/postgres.png';
-import logoSHEETS from './assets/sheets.png';
-import logoGH from './assets/github.png';
+import logoRJS from './assets/frameworkLogos/react.png';
+import logoRN from './assets/frameworkLogos/react-native.png';
+import logoNODE from './assets/frameworkLogos/node.png';
+import logoGIT from './assets/frameworkLogos/git.png';
+import logoMONGO from './assets/frameworkLogos/mongo.png';
+import logoFIREBASE from './assets/frameworkLogos/firebase.png';
+import logoPG from './assets/frameworkLogos/postgres.png';
+import logoSHEETS from './assets/frameworkLogos/sheets.png';
+import logoGH from './assets/frameworkLogos/github.png';
 import Contact from './Contact';
 import Project from './Project';
+// PROJECT LOGOS
+import claudia from './assets/projectIcons/claudia.png';
+import youtrain from './assets/projectIcons/youtrain.png';
+import ipred from './assets/projectIcons/ipred.png';
+// import contact from './assets/projectIcons/contact.png';
+// import progress from './assets/projectIcons/progress.png';
 
-const logos = {
+const FMLogos = {
   'React JS': logoRJS,
   'React Native': logoRN,
   'Node.js': logoNODE,
@@ -28,8 +34,17 @@ const logos = {
   'PostgreSQL': logoPG,
   'Google Sheets': logoSHEETS,
 }
-const logosKeys = Object.keys(logos);
-const logosValues = Object.values(logos);
+const FMLogosKeys = Object.keys(FMLogos);
+const FMLogosValues = Object.values(FMLogos);
+
+const PJLogos = {
+  'claudia': claudia,
+  'youtrain': youtrain,
+  'ipred': ipred,
+  'react': logoRJS,
+  'contact': logoRJS, // contacts
+  'progress': logoRJS, // progress
+}
 
 function App() {
   return (
@@ -84,8 +99,9 @@ function App() {
                       <Project
                         key={item.id}
                         project={item}
-                        logosKeys={logosKeys}
-                        logosValues={logosValues}
+                        FMLogosKeys={FMLogosKeys}
+                        FMLogosValues={FMLogosValues}
+                        PJLogos={PJLogos}
                       />
                     ))
                   }

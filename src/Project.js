@@ -1,17 +1,18 @@
 import React from 'react';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-import logoGH from './assets/github.png';
+import logoGH from './assets/frameworkLogos/github.png';
 import lock from './assets/lock.png';
 
 export default function Project(props) {
-  const { project, logosKeys, logosValues } = props;
-  const { name, img, github, description, frameworks } = project;
+  const { project, FMLogosKeys, FMLogosValues, PJLogos } = props;
+  const { name, image, github, description, frameworks } = project;
+
   return (
     <div className='projectItem'>
       <h2>{name}</h2>
       <img
-        src={img}
+        src={PJLogos[image]}
         alt={name}
         className='projectImg'
       />
@@ -19,12 +20,15 @@ export default function Project(props) {
       <div className='projectFrameworks'>
         {
           frameworks.map(framework => {
-            const index = logosKeys.indexOf(framework);
-            const logo = logosValues[index];
+            const index = FMLogosKeys.indexOf(framework);
+            const logo = FMLogosValues[index];
             return (
-              <Tippy content={framework} placement='bottom'>
+              <Tippy
+                key={framework}
+                content={framework}
+                placement='bottom'
+              >
                 <img
-                  key={framework}
                   src={logo}
                   alt={framework}
                   className='logoFramework'

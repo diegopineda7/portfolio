@@ -7,7 +7,7 @@
         "id": 0,
         "name": "React Basic",
         "github": "https://github.com/diegopineda7/react-basic",
-        "image": "",
+        "image": "react",
         "frameworks": [
           "Node.js",
           "React JS",
@@ -19,7 +19,7 @@
         "id": 1,
         "name": "Claudia (Chatbot)",
         "github": "",
-        "image": "",
+        "image": "claudia",
         "frameworks": [
           "Node.js",
           "React JS",
@@ -38,7 +38,7 @@
         "id": 0,
         "name": "YouTrain",
         "github": "",
-        "image": "",
+        "image": "youtrain",
         "frameworks": [
           "Node.js",
           "React Native",
@@ -51,7 +51,7 @@
         "id": 1,
         "name": "QR Attendance",
         "github": "https://github.com/diegopineda7/ipred-qr",
-        "image": "",
+        "image": "ipred",
         "frameworks": [
           "Node.js",
           "React Native",
@@ -65,7 +65,7 @@
         "id": 2,
         "name": "ProgressBuild",
         "github": "https://github.com/diegopineda7/ProgressBuild",
-        "image": "",
+        "image": "progress",
         "frameworks": [
           "Node.js",
           "React Native",
@@ -75,10 +75,10 @@
         "description": "Aplicación móvil para controlar el progreso en ejercicios de rutinas de entrenamiento."
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "Contact App",
         "github": "https://github.com/diegopineda7/contact-manager",
-        "image": "",
+        "image": "contact",
         "frameworks": [
           "Node.js",
           "React Native",

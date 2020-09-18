@@ -1,8 +1,8 @@
 import React from 'react';
-import email from './assets/email.png';
-import instagram from './assets/instagram.png';
-import linkedin from './assets/linkedin.png';
-import whatsapp from './assets/whatsapp.png';
+import email from './assets/social/email.png';
+import instagram from './assets/social/instagram.png';
+import linkedin from './assets/social/linkedin.png';
+import whatsapp from './assets/social/whatsapp.png';
 
 export default function Contact() {
   return (
