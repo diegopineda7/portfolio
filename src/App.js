@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 // COMPONENTS
 import projects from './projects.json';
 import Menu from './Menu';
@@ -12,6 +14,7 @@ import logoMONGO from './assets/mongo.png';
 import logoFIREBASE from './assets/firebase.png';
 import logoPG from './assets/postgres.png';
 import logoSHEETS from './assets/sheets.png';
+import logoGH from './assets/github.png';
 import Contacto from './Contacto';
 import Project from './Project';
 
@@ -33,8 +36,27 @@ function App() {
     <div className="App">
       <Menu />
       <div className='banner' id='home'>
-        <h1>DIEGO ALBERTO PINEDA MEDINA</h1>
-        <h2>BIENVENIDO(A) A MI PORTAFOLIO</h2>
+        <div className='header'>
+          <div className='name'>
+            <h1>DIEGO ALBERTO PINEDA MEDINA</h1>
+            <h2>BIENVENIDO(A) A MI PORTAFOLIO</h2>
+          </div>
+          <div className='ghPortfolio'>
+            <Tippy content={'Reposotorios en GitHub'} placement='bottom'>
+              <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://github.com/diegopineda7?tab=repositories'
+              >
+                <img
+                  src={logoGH}
+                  alt='GitHub'
+                  className='ghLogoHeader'
+                />
+              </a>
+            </Tippy>
+          </div>
+        </div>
         <div className='skills'>
           <div className='service'>
             <img src={logoNODE} alt='Desarrollo web' />
