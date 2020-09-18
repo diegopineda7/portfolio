@@ -8,14 +8,8 @@ export default function Contact() {
   return (
     <div className='contact' id='contact'>
       <h2>CONTACTO</h2>
-      <h3>Me puedes contactar en mis redes sociales</h3>
+      <h3>Me puedes contactar en mis redes sociales o enviándome un email</h3>
       <div className='contactContent'>
-        <a href='mailto:pineda.diego798@gmail.com'>
-          <div className='social'>
-            <img src={email} alt='Email' />
-            <h3>Email</h3>
-          </div>
-        </a>
         <a
           rel="noopener noreferrer"
           target='_blank'
@@ -46,23 +40,13 @@ export default function Contact() {
             <h3>WhatsApp</h3>
           </div>
         </a>
+        <a href='mailto:pineda.diego798@gmail.com'>
+          <div className='social'>
+            <img src={email} alt='Email' />
+            <h3>Email</h3>
+          </div>
+        </a>
       </div>
-      <h3>O si prefieres, déjame un mensaje y me comunicaré contigo</h3>
-      <form>
-        <div className='formItem'>
-          <label>¿Cómo te llamas?</label>
-          <input type='text' placeholder='Nombre*' />
-        </div>
-        <div className='formItem'>
-          <label>¿A qué email te puedo responder?</label>
-          <input type='email' placeholder='Email*' />
-        </div>
-        <div className='formItem'>
-          <label>¿Qué quieres comentarme?</label>
-          <textarea type='text' placeholder='Mensaje*' />
-        </div>
-      </form>
-      <button className='sendButton'>Enviar</button>
     </div>
   )
 }
