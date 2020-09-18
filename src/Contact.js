@@ -47,14 +47,14 @@ export default function Contact() {
           </div>
         </a>
       </div>
-      <h3>O si lo prefieres, déjame un mensaje y me comunicaré contigo</h3>
+      <h3>O si prefieres, déjame un mensaje y me comunicaré contigo</h3>
       <form>
         <div className='formItem'>
           <label>¿Cómo te llamas?</label>
           <input type='text' placeholder='Nombre*' />
         </div>
         <div className='formItem'>
-          <label>¿A qué email te respondo?</label>
+          <label>¿A qué email te puedo responder?</label>
           <input type='email' placeholder='Email*' />
         </div>
         <div className='formItem'>

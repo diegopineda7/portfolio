@@ -11,33 +11,35 @@ export default function Project(props) {
   return (
     <div className='projectItem'>
       <h2>{name}</h2>
-      <img
-        src={PJLogos[image]}
-        alt={name}
-        className='projectImg'
-      />
-      <p>{description}</p>
-      <div className='projectFrameworks'>
-        {
-          frameworks.map(framework => {
-            const index = FMLogosKeys.indexOf(framework);
-            const logo = FMLogosValues[index];
-            return (
-              <Tippy
-                key={framework}
-                content={framework}
-                placement='bottom'
-              >
-                <img
-                  src={logo}
-                  alt={framework}
-                  className='logoFramework'
-                />
-              </Tippy>
-            )
-          })
-        }
+      <div className='projectInfo'>
+        <img
+          src={PJLogos[image]}
+          alt={name}
+          className='projectImg'
+        />
+        <div className='projectFrameworks'>
+          {
+            frameworks.map(framework => {
+              const index = FMLogosKeys.indexOf(framework);
+              const logo = FMLogosValues[index];
+              return (
+                <Tippy
+                  key={framework}
+                  content={framework}
+                  placement='bottom'
+                >
+                  <img
+                    src={logo}
+                    alt={framework}
+                    className='logoFramework'
+                  />
+                </Tippy>
+              )
+            })
+          }
+        </div>
       </div>
+      <p className='description'>{description}</p>
       {
         github !== ''
           ? <a

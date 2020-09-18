@@ -45,7 +45,7 @@
           "MongoDB",
           "Git"
         ],
-        "description": "Aplicación móvil para la creación de planes de entrenamiento personalizados con seguimiento de progreso."
+        "description": "App para crear un plan de entrenamiento personalizado con seguimiento de progreso según objetivo."
       },
       {
         "id": 1,
@@ -59,7 +59,7 @@
           "Google Sheets",
           "Git"
         ],
-        "description": "Aplicacion móvil para el control de asistencia al V Congreso Internacional en Regencia de Farmacia organizado por el IPRED - UIS."
+        "description": "Lector de QR para el control de asistencia al V Congreso en Regencia de Farmacia del IPRED - UIS."
       },
       {
         "id": 2,
@@ -72,7 +72,7 @@
           "MongoDB",
           "Git"
         ],
-        "description": "Aplicación móvil para controlar el progreso en ejercicios de rutinas de entrenamiento."
+        "description": "App para controlar el progreso en ejercicios de rutinas de entrenamiento."
       },
       {
         "id": 3,
@@ -85,7 +85,7 @@
           "Firebase",
           "Git"
         ],
-        "description": "Aplicación móvil de agenda de contactos. Permite llamar y enviar mensajes de texto."
+        "description": "App de agenda de contactos con funcionalidad para llamar y enviar mensajes de texto."
       }
     ]
   }
