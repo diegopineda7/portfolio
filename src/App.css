@@ -2,12 +2,13 @@
   --github-color: #24292e;
   margin: 0;
   padding: 0;
-} 
-
-body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+} 
+
+body {
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -80,12 +81,17 @@ html {
 }
 
 .name {
-  background-color: red;
   margin-right: 15px;
 }
 
 .ghLogoHeader {
   width: 65px;
+  border: 3px solid white;
+}
+
+.ghLogoHeader:hover {
+  border: 3px solid #ebc90b;
+  border-radius: 99px;
 }
 
 .banner .skills {
@@ -199,7 +205,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 15px;
+}
+
+.contact h3  {
+  margin: 25px 1px;
 }
 
 .contact img {
@@ -214,6 +223,59 @@ html {
 
 .contact a:hover {
   opacity: .4;
+}
+
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 5px;
+}
+
+.contact form label {
+  font-weight: bold;
+  width: 155px;
+}
+
+.contact form input, textarea {
+  font-size: 18px;
+  width: 65%;
+  padding: 10px;
+}
+
+.contact form textarea {
+  height: 85px;
+  font-size: 16px;
+}
+
+.contact .sendButton {
+  width: 60%;
+  height: 45px;
+  background-color: #3e3074;
+  color: white;
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: all .8s;
+  cursor: pointer;
+}
+
+.contact .sendButton:hover {
+  background-color: white;
+  color: #3e3074;
+  border: 2px solid #3e3074;
+  font-size: 20px;
 }
 
 /* --------------- RESPONSIVE --------------- */
