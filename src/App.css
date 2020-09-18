@@ -292,11 +292,20 @@ html {
   cursor: pointer;
 }
 
+.contact .sendButton.disabled {
+  opacity: .2;
+}
+
 .contact .sendButton:hover {
   background-color: white;
   color: #3e3074;
   border: 2px solid #3e3074;
   font-size: 20px;
+}
+
+.contact .sendButton.disabled:hover {
+  background-color: #3e3074;
+  color: white;
 }
 
 /* --------------- RESPONSIVE --------------- */
