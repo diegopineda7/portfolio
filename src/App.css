@@ -256,7 +256,17 @@ html {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  .projectItem .projectInfo .projectImg {
+    height: 85px;
+  }
+
+  .projectItem .projectInfo .projectFrameworks {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .banner .header h1 {
     font-size: 25px;
   }
@@ -267,6 +277,10 @@ html {
 
   .projectsList {
     grid-template-columns: auto;
+  }
+
+  .projectItem .projectInfo .projectFrameworks {
+    grid-template-columns: auto auto auto auto;
   }
 }
 
