@@ -7,8 +7,8 @@ import whatsapp from './assets/social/whatsapp.png';
 export default function Contact() {
   return (
     <div className='contact' id='contact'>
-      <h2>CONTACTO</h2>
-      <h3>Me puedes contactar en mis redes sociales o enviándome un email</h3>
+      <h2>CONTACTA CONMIGO</h2>
+      <h3 className='message'>Me puedes contactar en redes sociales o enviándome un email</h3>
       <div className='contactContent'>
         <a
           rel="noopener noreferrer"

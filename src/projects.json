@@ -13,7 +13,7 @@
           "React JS",
           "Git"
         ],
-        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Counter, Clock, Fetch data, Hooks)."
+        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks)."
       },
       {
         "id": 1,
