@@ -21,8 +21,9 @@ import Project from './Project';
 import claudia from './assets/projectIcons/claudia.png';
 import youtrain from './assets/projectIcons/youtrain.png';
 import ipred from './assets/projectIcons/ipred.png';
-// import contact from './assets/projectIcons/contact.png';
-// import progress from './assets/projectIcons/progress.png';
+import react from './assets/projectIcons/react.png';
+import contact from './assets/projectIcons/contact.png';
+import progress from './assets/projectIcons/progress.png';
 
 const FMLogos = {
   'React JS': logoRJS,
@@ -41,9 +42,9 @@ const PJLogos = {
   'claudia': claudia,
   'youtrain': youtrain,
   'ipred': ipred,
-  'react': logoRJS,
-  'contact': logoRJS, // contacts
-  'progress': logoRJS, // progress
+  'react': react,
+  'contact': contact,
+  'progress': progress
 }
 
 function App() {
