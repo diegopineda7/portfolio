@@ -5,6 +5,10 @@ import 'tippy.js/dist/tippy.css';
 // COMPONENTS
 import projects from './projects.json';
 import Menu from './Menu';
+// SERVICES
+import web from './assets/services/web.png';
+import mobile from './assets/services/mobile.png';
+import responsive from './assets/services/responsive.png';
 // FRAMEWORK LOGOS
 import logoRJS from './assets/frameworkLogos/react.png';
 import logoRN from './assets/frameworkLogos/react-native.png';
@@ -49,7 +53,7 @@ const PJLogos = {
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Menu />
       <div className='banner' id='home'>
         <div className='header'>
@@ -60,7 +64,7 @@ function App() {
           <div className='ghPortfolio'>
             <Tippy content={'Repositorios en GitHub'} placement='bottom'>
               <a
-                rel="noopener noreferrer"
+                rel='noopener noreferrer'
                 target='_blank'
                 href='https://github.com/diegopineda7?tab=repositories'
               >
@@ -75,15 +79,15 @@ function App() {
         </div>
         <div className='skills'>
           <div className='service'>
-            <img src={logoNODE} alt='Desarrollo web' />
+            <img src={web} alt='Desarrollo web' />
             <h3>Desarrollo web</h3>
           </div>
           <div className='service'>
-            <img src={logoNODE} alt='Desarrollo móvil' />
+            <img src={mobile} alt='Desarrollo móvil' />
             <h3>Desarrollo móvil</h3>
           </div>
           <div className='service'>
-            <img src={logoNODE} alt='Responsive design' />
+            <img src={responsive} alt='Responsive design' />
             <h3>Responsive design</h3>
           </div>
         </div>

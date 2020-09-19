@@ -29,7 +29,7 @@ html {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #3e3074;
+  background-color: #2f274d;
   width: 100%;
   height: var(--menu-height);
   z-index: 1;
@@ -64,7 +64,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1c2c3d;
+  background-color: #171e25;
   padding: calc(var(--menu-height) + 45px) 0 45px 0;
   color: white;
 }
@@ -73,11 +73,15 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.name {
+.banner .name {
   margin-right: 15px;
+}
+
+.banner .name h2 {
+  margin-top: 10px;
 }
 
 .ghLogoHeader {
@@ -85,6 +89,7 @@ html {
   border: 3px solid white;
   background-color: white;
   border-radius: 99px;
+  margin-left: 35px;
 }
 
 .ghLogoHeader:hover {
@@ -100,7 +105,7 @@ html {
 }
 
 .banner .skills img {
-  width: 75px;
+  height: 95px;
 }
 
 .banner .skills h3 {
@@ -139,7 +144,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 300px;
+  height: 320px;
   background-color: white;
   border-radius: 8px;
   padding: 10px;
@@ -290,11 +295,19 @@ html {
     gap: 25px;
   }
 
+  .ghLogoHeader {
+    margin-left: 0px;
+  }
+
   .banner .skills {
     flex-direction: column;  
   }
 
   .banner .skills h3 {
     margin-bottom: 15px;
+  }
+
+  .contact img {
+    width: 80px;
   }
 }
