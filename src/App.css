@@ -1,5 +1,6 @@
 * {
   --github-color: #24292e;
+  --highlight-color: #ebc90b;
   --menu-height: 55px;
   margin: 0;
   padding: 0;
@@ -35,6 +36,13 @@ html {
   z-index: 1;
 }
 
+.menuOptions {
+  display:flex;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu .navLink {
   text-decoration: none;
   margin: 0 20px;
@@ -45,16 +53,9 @@ html {
   transition: all .5s;
 }
 
-.menuOptions {
-  display:flex;
-  height: 55px;
-  align-items: center;
-  justify-content: center;
-}
-
 .menu .navLink:hover {
   transform: translateY(-5px);
-  color: #ebc90b;
+  color: var(--highlight-color);
   border-bottom: 0;
 }
 
@@ -67,6 +68,11 @@ html {
   background-color: #171e25;
   padding: calc(var(--menu-height) + 45px) 0 45px 0;
   color: white;
+  transition: all 1s;
+}
+
+.banner:hover {
+  background-color: #3f454b;
 }
 
 .banner .header {
@@ -90,10 +96,11 @@ html {
   background-color: white;
   border-radius: 99px;
   margin-left: 35px;
+  transition: all .5s;
 }
 
 .ghLogoHeader:hover {
-  border-color: #ebc90b;
+  border-color: var(--highlight-color);
 }
 
 .banner .skills {
@@ -120,6 +127,11 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   background-color: #e6e6e6;
+  transition: all 1s;
+}
+
+.projects:hover {
+  background-color: #bed7f3;
 }
 
 .projectsVisible {
@@ -228,6 +240,11 @@ html {
   padding: 55px 0;
   background-color: #f0e6b0;
   padding: 25px;
+  transition: all 1s;
+}
+
+.contact:hover {
+  background-color: #f0dd70;
 }
 
 .contact .contactContent {
