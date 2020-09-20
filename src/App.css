@@ -144,13 +144,13 @@ html {
 
 .projectsList {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 25px;
+  grid-template-columns: 32% 32% 32%;
+  align-items: center;
+  gap: 15px;
   margin: 15px 35px;
 }
 
 .projectItem {
-  width: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -299,14 +299,19 @@ html {
 
   .projectsList {
     grid-template-columns: auto;
+    margin: 15px 10px;
   }
 
   .projectItem .projectInfo .projectFrameworks {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .menu .navLink {
+    margin: 0 10px;
+  }
+
   .banner .header {
     flex-direction: column;
     gap: 25px;
