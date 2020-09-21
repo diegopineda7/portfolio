@@ -96,6 +96,18 @@ html {
   background-color: #3f454b;
 }
 
+.banner .lang {
+  position: absolute;
+  top: var(--menu-height);
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  color: white;
+}
+
 .banner .header {
   width: 100%;
   display: flex;
@@ -206,7 +218,7 @@ html {
   border-radius: 15px;
 }
 
-.projectItem .projectLink {
+.projectItem .projectLink.link {
   cursor: pointer;
   transition: all .8s;
 }

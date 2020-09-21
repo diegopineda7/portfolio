@@ -3,11 +3,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-export default function Contact() {
+export default function Contact(props) {
+  const { lang } = props;
   return (
     <div className='contact' id='contact'>
-      <h2>CONTACTA CONMIGO</h2>
-      <h3 className='message'>Me puedes contactar en mis redes sociales o por email</h3>
+      <h2>
+        {
+          lang === 'es'
+            ? 'CONTACTA CONMIGO'
+            : 'CONTACT ME'
+        }
+      </h2>
+      <h3 className='message'>
+        {
+          lang === 'es'
+            ? 'Me puedes contactar en mis redes sociales o por email'
+            : 'You can contact me on my social networks or by email'
+        }
+
+      </h3>
       <div className='contactContent'>
         <a
           rel='noopener noreferrer'
@@ -46,6 +60,12 @@ export default function Contact() {
           </div>
         </a>
       </div>
+      <h4 className='message'>{
+        lang === 'es'
+          ? '¡Gracias por tu visita. Ten un gran día!'
+          : 'Thank you for your visit. Have a nice day!'
+      }
+      </h4>
     </div>
   )
 }

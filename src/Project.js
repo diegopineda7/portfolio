@@ -5,18 +5,18 @@ import logoGH from './assets/frameworkLogos/github.png';
 import lock from './assets/lock.png';
 
 export default function Project(props) {
-  const { project, FMLogosKeys, FMLogosValues, PJLogos } = props;
-  const { name, image, github, description, frameworks, link } = project;
+  const { project, FMLogosKeys, FMLogosValues, PJLogos, lang } = props;
+  const { name, image, github, descriptionEs, descriptionEn, frameworks, link } = project;
 
   return (
     <div className='projectItem'>
       <h2>{name}</h2>
-      <div className='projectInfo'>
+      <div className='projectInfo' >
         <a
           rel='noopener noreferrer'
           target='_blank'
-          href={link}
-          className='projectLink'
+          href={link !== '' ? link : null}
+          className={link !== '' ? 'projectLink link' : 'projectLink'}
         >
           <img
             src={PJLogos[image]}
@@ -46,7 +46,13 @@ export default function Project(props) {
           }
         </div>
       </div>
-      <p className='description'>{description}</p>
+      <p className='description'>
+        {
+          lang === 'es'
+            ? descriptionEs
+            : descriptionEn
+        }
+      </p>
       {
         github !== ''
           ? <a
@@ -60,7 +66,12 @@ export default function Project(props) {
               alt='Repositorio GitHub'
               className='logoFramework'
             />
-              Repositorio GitHub
+            {
+              lang === 'es'
+                ? 'Repositorio GitHub'
+                : 'GitHub repository'
+
+            }
           </a>
           : <p className='privateButton'>
             <img
@@ -68,7 +79,11 @@ export default function Project(props) {
               alt='Repositorio privado'
               className='logoFramework'
             />
-            Proyecto privado
+            {
+              lang === 'es'
+                ? 'Repositorio privado'
+                : 'Private repository'
+            }
           </p>
       }
     </div>

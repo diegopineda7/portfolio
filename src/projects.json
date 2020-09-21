@@ -1,7 +1,8 @@
 [
   {
     "id": 0,
-    "section": "APLICACIONES WEB",
+    "sectionEs": "APLICACIONES WEB",
+    "sectionEn": "WEB APPS",
     "projects": [
       {
         "id": 0,
@@ -13,8 +14,9 @@
           "React JS",
           "Git"
         ],
-        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
-        "lnk": "https://diegopineda7.github.io/react-basic/"
+        "descriptionEs": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
+        "descriptionEn": "Application that integrates different basic concepts of React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
+        "link": "https://diegopineda7.github.io/react-basic/"
       },
       {
         "id": 1,
@@ -27,12 +29,13 @@
           "PostgreSQL",
           "Git"
         ],
-        "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS.",
-        "lnk": "https://ipred.uis.edu.co/eisi/"
+        "descriptionEs": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS.",
+        "descriptionEn": "Chatbot for communication between students, teachers and administrative staff of IPRED - UIS.",
+        "link": "https://ipred.uis.edu.co/eisi/"
       },
       {
         "id": 2,
-        "name": "Mi portafolio",
+        "name": "Portfolio",
         "github": "https://github.com/diegopineda7/portfolio",
         "image": "portfolio",
         "frameworks": [
@@ -40,14 +43,16 @@
           "React JS",
           "Git"
         ],
-        "description": "El portafolio que estás viendo. En él te muestro mis habilidades, mis proyectos y cómo podemos contactarnos.",
-        "lnk": ""
+        "descriptionEs": "El portafolio que estás viendo. En él te muestro mis habilidades, mis proyectos y cómo podemos contactarnos.",
+        "descriptionEn": "The portfolio you are viewing. In it I show you my skills, my projects and how we can contact each other.",
+        "link": ""
       }
     ]
   },
   {
     "id": 1,
-    "section": "APLICACIONES MOVILES",
+    "sectionEs": "APLICACIONES MOVILES",
+    "sectionEn": "MOBILE APPS",
     "projects": [
       {
         "id": 0,
@@ -60,7 +65,9 @@
           "MongoDB",
           "Git"
         ],
-        "description": "App para crear un plan de entrenamiento personalizado con seguimiento de progreso según objetivo."
+        "descriptionEs": "App para crear un plan de entrenamiento personalizado con seguimiento de progreso según objetivo.",
+        "descriptionEn": "App to create a personalized training plan with progress tracking according to goal.",
+        "link": ""
       },
       {
         "id": 1,
@@ -74,7 +81,9 @@
           "Google Sheets",
           "Git"
         ],
-        "description": "Lector QR para el control de asistencia al V Congreso Internacional en Regencia de Farmacia del IPRED - UIS."
+        "descriptionEs": "Lector QR para el control de asistencia al V Congreso Internacional en Regencia de Farmacia del IPRED - UIS.",
+        "descriptionEn": "QR reader to control attendance at the V International Congress on Pharmacy Regency of IPRED - UIS.",
+        "link": ""
       },
       {
         "id": 2,
@@ -87,7 +96,9 @@
           "MongoDB",
           "Git"
         ],
-        "description": "App para controlar el progreso en ejercicios de rutinas de entrenamiento."
+        "descriptionEs": "App para controlar el progreso en ejercicios de rutinas de entrenamiento.",
+        "descriptionEn": "App to track the progress in training routines exercises.",
+        "link": ""
       },
       {
         "id": 3,
@@ -100,7 +111,9 @@
           "Firebase",
           "Git"
         ],
-        "description": "App de agenda de contactos con funcionalidad para llamar y enviar mensajes de texto."
+        "descriptionEs": "App de agenda de contactos con funcionalidad para llamar y enviar mensajes de texto.",
+        "descriptionEn": "Address book app with functionality to call and send text messages.",
+        "link": ""
       }
     ]
   }

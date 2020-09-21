@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 // COMPONENTS
 import projects from './projects.json';
@@ -6,6 +6,9 @@ import Menu from './Menu';
 import Banner from './Banner';
 import Education from './Education';
 import Experience from './Experience';
+import Contact from './Contact';
+import Project from './Project';
+import Footer from './Footer';
 // FRAMEWORK LOGOS
 import logoRJS from './assets/frameworkLogos/react.png';
 import logoRN from './assets/frameworkLogos/react-native.png';
@@ -15,9 +18,6 @@ import logoMONGO from './assets/frameworkLogos/mongo.png';
 import logoFIREBASE from './assets/frameworkLogos/firebase.png';
 import logoPG from './assets/frameworkLogos/postgres.png';
 import logoSHEETS from './assets/frameworkLogos/sheets.png';
-import Contact from './Contact';
-import Project from './Project';
-import Footer from './Footer';
 // PROJECT LOGOS
 import claudia from './assets/projectIcons/claudia.png';
 import portfolio from './assets/projectIcons/portfolio.png';
@@ -36,7 +36,7 @@ const FMLogos = {
   'Firebase': logoFIREBASE,
   'PostgreSQL': logoPG,
   'Google Sheets': logoSHEETS,
-}
+};
 const FMLogosKeys = Object.keys(FMLogos);
 const FMLogosValues = Object.values(FMLogos);
 
@@ -48,19 +48,26 @@ const PJLogos = {
   'react': react,
   'contact': contact,
   'progress': progress
-}
+};
 
 function App() {
+  const [lang, setLang] = useState('es');
   return (
     <div className='App'>
-      <Menu />
-      <Banner />
+      <Menu lang={lang} />
+      <Banner lang={lang} setLang={setLang} />
       <div className='projects' id='projects'>
         <div className='projectsVisible'>
           {
             projects.map(section => (
               <div className='projectsSection' key={section.id}>
-                <h2>{section.section}</h2>
+                <h2>
+                  {
+                    lang === 'es'
+                      ? section.sectionEs
+                      : section.sectionEn
+                  }
+                </h2>
                 <div className='projectsList'>
                   {
                     section.projects.map(item => (
@@ -70,6 +77,7 @@ function App() {
                         FMLogosKeys={FMLogosKeys}
                         FMLogosValues={FMLogosValues}
                         PJLogos={PJLogos}
+                        lang={lang}
                       />
                     ))
                   }
@@ -79,9 +87,9 @@ function App() {
           }
         </div>
       </div>
-      <Education />
-      <Experience />
-      <Contact />
+      <Education lang={lang} />
+      <Experience lang={lang} />
+      <Contact lang={lang} />
       <Footer />
     </div >
   );
