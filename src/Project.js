@@ -23,7 +23,6 @@ export default function Project(props) {
             alt={name}
             className='projectImg'
           />
-          <div className='plus'>+</div>
         </a>
         <div className='projectFrameworks'>
           {

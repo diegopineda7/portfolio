@@ -199,11 +199,6 @@ html {
   opacity: .7;
 }
 
-.projectItem .projectLink .plus {
-  position: absolute;
-  width: auto;
-}
-
 .projectItem .projectInfo .projectFrameworks {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -408,10 +403,6 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-  .menu .navLink {
-    margin: 0 10px;
-  }
-
   .banner .header {
     flex-direction: column;
     gap: 25px;
@@ -423,6 +414,15 @@ html {
 
   .banner .skills {
     flex-direction: column;  
+    gap: 25px;
+  }
+
+  .banner .service {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px
   }
 
   .banner .skills h3 {

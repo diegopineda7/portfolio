@@ -31,15 +31,15 @@ export default function Banner() {
         </div>
       </div>
       <div className='skills'>
-        <div>
+        <div className='service'>
           <img src={web} alt='Desarrollo web' />
           <h3>Desarrollo web</h3>
         </div>
-        <div>
+        <div className='service'>
           <img src={mobile} alt='Desarrollo móvil' />
           <h3>Desarrollo móvil</h3>
         </div>
-        <div>
+        <div className='service'>
           <img src={responsive} alt='Responsive design' />
           <h3>Responsive design</h3>
         </div>
