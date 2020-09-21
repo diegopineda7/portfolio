@@ -27,6 +27,18 @@
           "Git"
         ],
         "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS."
+      },
+      {
+        "id": 2,
+        "name": "Portafolio",
+        "github": "https://github.com/diegopineda7/portfolio",
+        "image": "claudia",
+        "frameworks": [
+          "Node.js",
+          "React JS",
+          "Git"
+        ],
+        "description": "El portafolio que estás viendo. En él te muestro mis habilidades, mis proyectos y cómo podemos contactarnos."
       }
     ]
   },

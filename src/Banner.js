@@ -11,7 +11,7 @@ export default function Banner() {
     <div className='banner' id='home'>
       <div className='header'>
         <div className='name'>
-          <h1>DIEGO ALBERTO PINEDA MEDINA</h1>
+          <h1>HOLA, ME LLAMO DIEGO PINEDA</h1>
           <h2>TE DOY LA BIENVENIDA A MI PORTAFOLIO</h2>
         </div>
         <div className='ghPortfolio'>
