@@ -6,6 +6,8 @@ export default function Menu() {
       <a className='navLink' href='#home'>DIEGO</a>
       <div className='menuOptions'>
         <a className='navLink' href='#projects'>PROYECTOS</a>
+        <a className='navLink' href='#education'>EDUCACIÓN</a>
+        <a className='navLink' href='#experience'>EXPERIENCIA</a>
         <a className='navLink' href='#contact'>CONTACTO</a>
       </div>
     </div>

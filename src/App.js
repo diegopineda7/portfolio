@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
 // COMPONENTS
 import projects from './projects.json';
 import Menu from './Menu';
-// SERVICES
-import web from './assets/services/web.png';
-import mobile from './assets/services/mobile.png';
-import responsive from './assets/services/responsive.png';
+import Banner from './Banner';
+import Education from './Education';
+import Experience from './Experience';
 // FRAMEWORK LOGOS
 import logoRJS from './assets/frameworkLogos/react.png';
 import logoRN from './assets/frameworkLogos/react-native.png';
@@ -18,7 +15,6 @@ import logoMONGO from './assets/frameworkLogos/mongo.png';
 import logoFIREBASE from './assets/frameworkLogos/firebase.png';
 import logoPG from './assets/frameworkLogos/postgres.png';
 import logoSHEETS from './assets/frameworkLogos/sheets.png';
-import logoGH from './assets/frameworkLogos/github.png';
 import Contact from './Contact';
 import Project from './Project';
 // PROJECT LOGOS
@@ -55,43 +51,7 @@ function App() {
   return (
     <div className='App'>
       <Menu />
-      <div className='banner' id='home'>
-        <div className='header'>
-          <div className='name'>
-            <h1>DIEGO ALBERTO PINEDA MEDINA</h1>
-            <h2>TE DOY LA BIENVENIDA A MI PORTAFOLIO</h2>
-          </div>
-          <div className='ghPortfolio'>
-            <Tippy content={'Repositorios en GitHub'} placement='bottom'>
-              <a
-                rel='noopener noreferrer'
-                target='_blank'
-                href='https://github.com/diegopineda7?tab=repositories'
-              >
-                <img
-                  src={logoGH}
-                  alt='GitHub'
-                  className='ghLogoHeader'
-                />
-              </a>
-            </Tippy>
-          </div>
-        </div>
-        <div className='skills'>
-          <div>
-            <img src={web} alt='Desarrollo web' />
-            <h3>Desarrollo web</h3>
-          </div>
-          <div>
-            <img src={mobile} alt='Desarrollo móvil' />
-            <h3>Desarrollo móvil</h3>
-          </div>
-          <div>
-            <img src={responsive} alt='Responsive design' />
-            <h3>Responsive design</h3>
-          </div>
-        </div>
-      </div>
+      <Banner />
       <div className='projects' id='projects'>
         <div className='projectsVisible'>
           {
@@ -116,6 +76,8 @@ function App() {
           }
         </div>
       </div>
+      <Education />
+      <Experience />
       <Contact />
     </div >
   );

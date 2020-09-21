@@ -50,7 +50,7 @@
       {
         "id": 1,
         "name": "QR Attendance",
-        "github": "https://github.com/diegopineda7/ipred-qr",
+        "github": "",
         "image": "ipred",
         "frameworks": [
           "Node.js",
