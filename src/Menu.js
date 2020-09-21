@@ -33,11 +33,14 @@ export default function Menu(props) {
             {lang === 'es' ? 'PROYECTOS' : 'PROJECTS'}
           </a>
           <a className='navLink' href='#education' onClick={hideMenu} >
-            {lang === 'es' ? 'EDUCACIÓN' : 'EDUCATION'}</a>
+            {lang === 'es' ? 'EDUCACIÓN' : 'EDUCATION'}
+          </a>
           <a className='navLink' href='#experience' onClick={hideMenu} >
-            {lang === 'es' ? 'EXPERIENCIA' : 'EXPERIENCE'}</a>
+            {lang === 'es' ? 'EXPERIENCIA' : 'EXPERIENCE'}
+          </a>
           <a className='navLink' href='#contact' onClick={hideMenu} >
-            {lang === 'es' ? 'CONTACTO' : 'CONTACT'}</a>
+            {lang === 'es' ? 'CONTACTO' : 'CONTACT'}
+          </a>
         </div>
       </div>
     </div>

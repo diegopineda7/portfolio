@@ -113,10 +113,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.banner .name {
-  margin-right: 15px;
+  gap: 55px
 }
 
 .banner .name h2 {
@@ -128,7 +125,6 @@ html {
   border: 3px solid white;
   background-color: white;
   border-radius: 99px;
-  margin-left: 35px;
   transition: all .5s;
 }
 
@@ -465,6 +461,11 @@ html {
     flex-direction: column;
     gap: 25px;
   }
+  
+  .banner .header .name {
+    
+    background-color: red;
+  }
 
   .ghLogoHeader {
     margin-left: 0px;
@@ -489,5 +490,13 @@ html {
 
   .contact img {
     width: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact .contactContent {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px
   }
 }
