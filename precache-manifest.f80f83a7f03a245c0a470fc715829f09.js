@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c73ac830e96caa983e4ccf9b29177e2",
+    "revision": "8c1fe0906de216f8973a6c4cafd9138c",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c0e693257295ed46bc76",
+    "revision": "eb88d59a7ff0f7063582",
     "url": "/portfolio/static/css/2.a8f673c4.chunk.css"
   },
   {
-    "revision": "7d1a3f38696387c15775",
-    "url": "/portfolio/static/css/main.39e5700c.chunk.css"
+    "revision": "84a6e8c7342015cf2b6b",
+    "url": "/portfolio/static/css/main.282ea580.chunk.css"
   },
   {
-    "revision": "c0e693257295ed46bc76",
-    "url": "/portfolio/static/js/2.59a6ab3f.chunk.js"
+    "revision": "eb88d59a7ff0f7063582",
+    "url": "/portfolio/static/js/2.adf48ce3.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/portfolio/static/js/2.59a6ab3f.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.adf48ce3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7d1a3f38696387c15775",
-    "url": "/portfolio/static/js/main.2df20477.chunk.js"
+    "revision": "84a6e8c7342015cf2b6b",
+    "url": "/portfolio/static/js/main.394ec76c.chunk.js"
   },
   {
     "revision": "8b2185634292915c87ea",
@@ -36,10 +36,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/contact.1511dced.png"
   },
   {
-    "revision": "1b30ada930ef69b4313ceed90c13fd45",
-    "url": "/portfolio/static/media/email.1b30ada9.png"
-  },
-  {
     "revision": "6bb77e5fb5e1f6c2a8d3d15b7d7c894f",
     "url": "/portfolio/static/media/firebase.6bb77e5f.png"
   },
@@ -50,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1da580d8f40d20730ef08ef3ff3a1cb",
     "url": "/portfolio/static/media/ipred.b1da580d.png"
-  },
-  {
-    "revision": "e3a23a4e62b35208604f49a667f57c18",
-    "url": "/portfolio/static/media/linkedin.e3a23a4e.png"
   },
   {
     "revision": "ccb772ad54ba4c236517dbb6723ff3b2",
@@ -82,9 +74,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "504fa10d184fc163d75b8e2aaf72748d",
     "url": "/portfolio/static/media/uis.504fa10d.png"
-  },
-  {
-    "revision": "d04ff624a772a7bdba8d805164e4ee33",
-    "url": "/portfolio/static/media/whatsapp.d04ff624.png"
   }
 ]);
