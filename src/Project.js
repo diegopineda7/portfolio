@@ -21,7 +21,7 @@ export default function Project(props) {
           <img
             src={PJLogos[image]}
             alt={name}
-            className='projectImg'
+            className={image === 'portfolio' ? 'projectImg portfolio' : 'projectImg'}
           />
         </a>
         <div className='projectFrameworks'>

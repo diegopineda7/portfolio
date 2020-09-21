@@ -19,6 +19,7 @@ import Contact from './Contact';
 import Project from './Project';
 // PROJECT LOGOS
 import claudia from './assets/projectIcons/claudia.png';
+import portfolio from './assets/projectIcons/portfolio.png';
 import youtrain from './assets/projectIcons/youtrain.png';
 import ipred from './assets/projectIcons/ipred.png';
 import react from './assets/projectIcons/react.png';
@@ -40,6 +41,7 @@ const FMLogosValues = Object.values(FMLogos);
 
 const PJLogos = {
   'claudia': claudia,
+  'portfolio': portfolio,
   'youtrain': youtrain,
   'ipred': ipred,
   'react': react,

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from './assets/logo.png';
 
 export default function Menu() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -13,7 +14,13 @@ export default function Menu() {
 
   return (
     <div className='menu'>
-      <a className='navLink' href='#home' onClick={hideMenu} >DIEGO</a>
+      <a className='navLink img' href='#home' onClick={hideMenu} >
+        <img
+          src={logo}
+          alt='Diego Pineda'
+          className='portfolioIcon'
+        />
+      </a>
       <div>
         <div className='openMenu' onClick={handleMenu}>##</div>
         <div className={menuVisible ? 'menuOptions visible' : 'menuOptions'}>

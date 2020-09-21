@@ -56,12 +56,21 @@ html {
 
 .menu .navLink {
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 15px;
   color: white;
   font-weight: bold;
   padding-bottom: 3px;
   border-bottom: 1px solid #fff;
   transition: all .5s;
+}
+
+.menu .navLink.img {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.menu .navLink.img img {
+  width: 35px;
 }
 
 .menu .navLink:hover {
@@ -188,6 +197,12 @@ html {
 
 .projectItem .projectInfo .projectImg {
   height: 95px;
+}
+
+.projectItem .projectInfo .projectImg.portfolio {
+  background-color: #242a3a;
+  padding: 5px;
+  border-radius: 15px;
 }
 
 .projectItem .projectLink {
