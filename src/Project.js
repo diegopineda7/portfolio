@@ -6,17 +6,25 @@ import lock from './assets/lock.png';
 
 export default function Project(props) {
   const { project, FMLogosKeys, FMLogosValues, PJLogos } = props;
-  const { name, image, github, description, frameworks } = project;
+  const { name, image, github, description, frameworks, link } = project;
 
   return (
     <div className='projectItem'>
       <h2>{name}</h2>
       <div className='projectInfo'>
-        <img
-          src={PJLogos[image]}
-          alt={name}
-          className='projectImg'
-        />
+        <a
+          rel='noopener noreferrer'
+          target='_blank'
+          href={link}
+          className='projectLink'
+        >
+          <img
+            src={PJLogos[image]}
+            alt={name}
+            className='projectImg'
+          />
+          <div className='plus'>+</div>
+        </a>
         <div className='projectFrameworks'>
           {
             frameworks.map(framework => {
@@ -43,7 +51,7 @@ export default function Project(props) {
       {
         github !== ''
           ? <a
-            rel="noopener noreferrer"
+            rel='noopener noreferrer'
             target='_blank'
             href={github}
             className='ghButton'

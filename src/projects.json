@@ -13,7 +13,8 @@
           "React JS",
           "Git"
         ],
-        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks)."
+        "description": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
+        "lnk": ""
       },
       {
         "id": 1,
@@ -26,11 +27,12 @@
           "PostgreSQL",
           "Git"
         ],
-        "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS."
+        "description": "Chatbot para la comunicación entre estudiantes, profesores y personal administrativo del IPRED - UIS.",
+        "lnk": ""
       },
       {
         "id": 2,
-        "name": "Portafolio",
+        "name": "Mi portafolio",
         "github": "https://github.com/diegopineda7/portfolio",
         "image": "claudia",
         "frameworks": [
@@ -38,7 +40,8 @@
           "React JS",
           "Git"
         ],
-        "description": "El portafolio que estás viendo. En él te muestro mis habilidades, mis proyectos y cómo podemos contactarnos."
+        "description": "El portafolio que estás viendo. En él te muestro mis habilidades, mis proyectos y cómo podemos contactarnos.",
+        "lnk": ""
       }
     ]
   },

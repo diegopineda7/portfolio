@@ -23,21 +23,32 @@ html {
 }
 
 /* --------------- MENU --------------- */
+.menu .openMenu {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
 .menu {
-  top: 0;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   background-color: #2f274d;
   width: 100%;
   height: var(--menu-height);
   z-index: 1;
 }
 
+.menuSections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .menuOptions {
-  display:flex;
+  display: flex;
   height: 55px;
   align-items: center;
   justify-content: center;
@@ -179,6 +190,20 @@ html {
   height: 95px;
 }
 
+.projectItem .projectLink {
+  cursor: pointer;
+  transition: all .8s;
+}
+
+.projectItem .projectLink:hover {
+  opacity: .7;
+}
+
+.projectItem .projectLink .plus {
+  position: absolute;
+  width: auto;
+}
+
 .projectItem .projectInfo .projectFrameworks {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -313,6 +338,57 @@ html {
 }
 
 @media screen and (max-width: 670px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu .openMenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    min-height: var(--menu-height);
+    background-color: #3e3074;
+    transition: all 1s;
+  }
+
+  .menu .openMenu:hover {
+    background-color: white;
+    color: #3e3074;
+  }
+  
+  .menu .menuOptions {
+    position: absolute;
+    right: -35%;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: fit-content;
+    width: 35%;
+    background-color: #2f274d;
+    transition: all 1s;
+  }
+
+  .menu .menuOptions.visible {
+    right: 0;
+  }
+
+  .menu .menuOptions .navLink {
+    border: none;
+  }
+
+  .menu .menuOptions  .navLink:hover {
+    transform: translateX(-10px);
+    color: var(--highlight-color);
+}
+
   .banner .header h1 {
     font-size: 25px;
   }
