@@ -17,6 +17,7 @@ import logoPG from './assets/frameworkLogos/postgres.png';
 import logoSHEETS from './assets/frameworkLogos/sheets.png';
 import Contact from './Contact';
 import Project from './Project';
+import Footer from './Footer';
 // PROJECT LOGOS
 import claudia from './assets/projectIcons/claudia.png';
 import portfolio from './assets/projectIcons/portfolio.png';
@@ -81,6 +82,7 @@ function App() {
       <Education />
       <Experience />
       <Contact />
+      <Footer />
     </div >
   );
 }
