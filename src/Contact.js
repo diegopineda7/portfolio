@@ -1,8 +1,7 @@
 import React from 'react';
-import email from './assets/social/email.png';
-import instagram from './assets/social/instagram.png';
-import linkedin from './assets/social/linkedin.png';
-import whatsapp from './assets/social/whatsapp.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export default function Contact() {
   return (
@@ -16,7 +15,7 @@ export default function Contact() {
           href='https://www.linkedin.com/in/diego-alberto-pineda-medina-8b1476180/'
         >
           <div className='social'>
-            <img src={linkedin} alt='LinkedIn' />
+            <FontAwesomeIcon icon={faLinkedinIn} className='icon' />
             <h3>LinkedIn</h3>
           </div>
         </a>
@@ -26,7 +25,7 @@ export default function Contact() {
           href='https://www.instagram.com/pinedadiego7/'
         >
           <div className='social'>
-            <img src={instagram} alt='Instagram' />
+            <FontAwesomeIcon icon={faInstagram} className='icon' />
             <h3>Instagram</h3>
           </div>
         </a>
@@ -36,17 +35,16 @@ export default function Contact() {
           href='https://api.whatsapp.com/send?phone=+573125285909'
         >
           <div className='social'>
-            <img src={whatsapp} alt='WhatsApp' />
+            <FontAwesomeIcon icon={faWhatsapp} className='icon' />
             <h3>WhatsApp</h3>
           </div>
         </a>
         <a href='mailto:pineda.diego798@gmail.com'>
           <div className='social'>
-            <img src={email} alt='Email' />
+            <FontAwesomeIcon icon={faEnvelope} className='icon' />
             <h3>Email</h3>
           </div>
         </a>
-
       </div>
     </div>
   )

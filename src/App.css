@@ -27,6 +27,7 @@ html {
   display: none;
   color: white;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .menu {
@@ -272,8 +273,13 @@ html {
 
 /* --------------- EDUCATION AND EXPERICE SECTIONS --------------- */
 .education, .experience {
-  background-color: #b9f1c1;
+  background-color: #ccecd1;
   padding: calc(var(--menu-height) + 20px) 35px;
+  transition: all 1s;
+}
+
+.education:hover {
+  background-color: #aaf0b3;
 }
 
 .education .item, .experience .item {
@@ -284,14 +290,17 @@ html {
   padding: 25px 0;
 }
 
-
 .education .item img, .experience .item img {
   width: 145px;
 }
 
 /* --------------- EXPERIENCE SECTION --------------- */
 .experience {
-  background-color: #c4b7f3;
+  background-color: #d7d0f0;
+}
+
+.experience:hover {
+  background-color: #c1b3f5;
 }
 
 /* --------------- CONTACT SECTION --------------- */
@@ -316,8 +325,11 @@ html {
   margin: 25px 0;
 }
 
-.contact img {
-  width: 95px;
+.contact .icon {
+  font-size: 40px;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 99px;
 }
 
 .contact a {

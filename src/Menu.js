@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import logo from './assets/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Menu() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -22,7 +24,9 @@ export default function Menu() {
         />
       </a>
       <div>
-        <div className='openMenu' onClick={handleMenu}>##</div>
+        <div className='openMenu' onClick={handleMenu}>
+          <FontAwesomeIcon icon={faBars} />
+        </div>
         <div className={menuVisible ? 'menuOptions visible' : 'menuOptions'}>
           <a className='navLink' href='#projects' onClick={hideMenu} >PROYECTOS</a>
           <a className='navLink' href='#education' onClick={hideMenu} >EDUCACIÓN</a>
