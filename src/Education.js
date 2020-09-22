@@ -9,9 +9,9 @@ export default function Education(props) {
       <h2>
         {lang === 'es' ? 'EDUCACIÓN' : 'EDUCATION'}
       </h2>
-      <div className='item'>
-        <img src={uis} alt='Universidad Industrial de Santander' />
-        <div className='description'>
+      <div className='education__item'>
+        <img src={uis} alt='Universidad Industrial de Santander' className='education__item-img' />
+        <div className='education__description'>
           <h3>
             {
               lang === 'es'

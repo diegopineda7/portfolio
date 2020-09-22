@@ -57,10 +57,10 @@ function App() {
       <Menu lang={lang} />
       <Banner lang={lang} setLang={setLang} />
       <div className='projects' id='projects'>
-        <div className='projectsVisible'>
+        <div className='projects__visible'>
           {
             projects.map(section => (
-              <div className='projectsSection' key={section.id}>
+              <div className='projects__section' key={section.id}>
                 <h2>
                   {
                     lang === 'es'
@@ -68,7 +68,7 @@ function App() {
                       : section.sectionEn
                   }
                 </h2>
-                <div className='projectsList'>
+                <div className='projects__list'>
                   {
                     section.projects.map(item => (
                       <Project

@@ -18,7 +18,7 @@ export default function Banner(props) {
 
   return (
     <div className='banner' id='home'>
-      <div className='lang'>
+      <div className='banner__lang'>
         ESP
         <Switch
           checked={checked}
@@ -32,16 +32,16 @@ export default function Banner(props) {
         />
         ENG
       </div>
-      <div className='header'>
-        <div className='name'>
-          <h1>
+      <div className='banner__header'>
+        <div className='banner__name'>
+          <h1 className='banner__greet'>
             {
               lang === 'es'
                 ? 'HOLA, ME LLAMO DIEGO PINEDA'
                 : 'HI THERE, I\'M DIEGO PINEDA'
             }
           </h1>
-          <h2>
+          <h2 className='banner__welcome'>
             {
               lang === 'es'
                 ? 'TE DOY LA BIENVENIDA A MI PORTAFOLIO'
@@ -49,7 +49,7 @@ export default function Banner(props) {
             }
           </h2>
         </div>
-        <div className='ghPortfolio'>
+        <div className='banner__github'>
           <Tippy content={'Repositorios en GitHub'} placement='bottom'>
             <a
               rel='noopener noreferrer'
@@ -59,32 +59,36 @@ export default function Banner(props) {
               <img
                 src={logoGH}
                 alt='GitHub'
-                className='ghLogoHeader'
+                className='banner__github-logo'
               />
             </a>
           </Tippy>
         </div>
       </div>
-      <div className='skills'>
-        <div className='service'>
-          <img src={web} alt='Desarrollo web' />
-          <h3>{
-            lang === 'es'
-              ? 'Desarrollo web'
-              : 'Web development'
-          }</h3>
+      <div className='banner__skills'>
+        <div className='banner__service'>
+          <img src={web} alt='Desarrollo web' className='banner__service-img' />
+          <h3 className='banner__service-text'>
+            {
+              lang === 'es'
+                ? 'Desarrollo web'
+                : 'Web development'
+            }
+          </h3>
         </div>
-        <div className='service'>
-          <img src={mobile} alt='Desarrollo móvil' />
-          <h3>{
-            lang === 'es'
-              ? 'Desarrollo móvil'
-              : 'Mobile development'
-          }</h3>
+        <div className='banner__service'>
+          <img src={mobile} alt='Desarrollo móvil' className='banner__service-img' />
+          <h3 className='banner__service-text'>
+            {
+              lang === 'es'
+                ? 'Desarrollo móvil'
+                : 'Mobile development'
+            }
+          </h3>
         </div>
-        <div className='service'>
-          <img src={responsive} alt='Responsive design' />
-          <h3>Responsive design</h3>
+        <div className='banner__service'>
+          <img src={responsive} alt='Responsive design' className='banner__service-img' />
+          <h3 className='banner__service-text'>Responsive design</h3>
         </div>
       </div>
     </div>

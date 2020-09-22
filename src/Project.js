@@ -9,22 +9,22 @@ export default function Project(props) {
   const { name, image, github, descriptionEs, descriptionEn, frameworks, link } = project;
 
   return (
-    <div className='projectItem'>
+    <div className='project'>
       <h2>{name}</h2>
-      <div className='projectInfo' >
+      <div className='project__info' >
         <a
           rel='noopener noreferrer'
           target='_blank'
           href={link !== '' ? link : null}
-          className={link !== '' ? 'projectLink link' : 'projectLink'}
+          className={link !== '' ? 'project__link project__link--link' : 'project__link'}
         >
           <img
             src={PJLogos[image]}
             alt={name}
-            className={image === 'portfolio' ? 'projectImg portfolio' : 'projectImg'}
+            className={image === 'portfolio' ? 'project__img project__img--portfolio' : 'project__img'}
           />
         </a>
-        <div className='projectFrameworks'>
+        <div className='project__frameworks'>
           {
             frameworks.map(framework => {
               const index = FMLogosKeys.indexOf(framework);
@@ -38,7 +38,7 @@ export default function Project(props) {
                   <img
                     src={logo}
                     alt={framework}
-                    className='logoFramework'
+                    className='project__framework-logo'
                   />
                 </Tippy>
               )
@@ -46,7 +46,7 @@ export default function Project(props) {
           }
         </div>
       </div>
-      <p className='description'>
+      <p className='project__description'>
         {
           lang === 'es'
             ? descriptionEs
@@ -59,12 +59,12 @@ export default function Project(props) {
             rel='noopener noreferrer'
             target='_blank'
             href={github}
-            className='ghButton'
+            className='project__gh-button'
           >
             <img
               src={logoGH}
               alt='Repositorio GitHub'
-              className='logoFramework'
+              className='project__framework-logo project__gh-button-img'
             />
             {
               lang === 'es'
@@ -73,11 +73,11 @@ export default function Project(props) {
 
             }
           </a>
-          : <p className='privateButton'>
+          : <p className='project__private-button'>
             <img
               src={lock}
               alt='Repositorio privado'
-              className='logoFramework'
+              className='project__framework-logo project__private-button-img'
             />
             {
               lang === 'es'

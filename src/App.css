@@ -16,20 +16,10 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-.App {
   text-align: center;
 }
 
 /* --------------- MENU --------------- */
-.menu .openMenu {
-  display: none;
-  color: white;
-  cursor: pointer;
-  font-size: 20px;
-}
-
 .menu {
   position: fixed;
   display: flex;
@@ -41,6 +31,13 @@ html {
   z-index: 1;
 }
 
+.menu__open-button {
+  display: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 .menuSections {
   display: flex;
   align-items: center;
@@ -48,14 +45,14 @@ html {
   flex-wrap: wrap;
 }
 
-.menuOptions {
+.menu__options {
   display: flex;
   height: 55px;
   align-items: center;
   justify-content: center;
 }
 
-.menu .navLink {
+.menu__item {
   text-decoration: none;
   margin: 0 15px;
   color: white;
@@ -65,16 +62,16 @@ html {
   transition: all .5s;
 }
 
-.menu .navLink.img {
+.menu__item--img {
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.menu .navLink.img img {
+.menu__logo {
   width: 35px;
 }
 
-.menu .navLink:hover {
+.menu__item:hover {
   transform: translateY(-5px);
   color: var(--highlight-color);
   border-bottom: 0;
@@ -96,7 +93,7 @@ html {
   background-color: #3f454b;
 }
 
-.banner .lang {
+.banner__lang {
   position: absolute;
   top: var(--menu-height);
   left: 0;
@@ -108,7 +105,7 @@ html {
   color: white;
 }
 
-.banner .header {
+.banner__header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -116,11 +113,11 @@ html {
   gap: 55px
 }
 
-.banner .name h2 {
+.banner__welcome {
   margin-top: 10px;
 }
 
-.ghLogoHeader {
+.banner__github-logo {
   width: 65px;
   border: 3px solid white;
   background-color: white;
@@ -128,11 +125,11 @@ html {
   transition: all .5s;
 }
 
-.ghLogoHeader:hover {
+.banner__github-logo:hover {
   border-color: var(--highlight-color);
 }
 
-.banner .skills {
+.banner__skills {
   width: 100%;
   margin-top: 45px;
   display: flex;
@@ -140,11 +137,11 @@ html {
   justify-content: space-around;
 }
 
-.banner .skills img {
+.banner__service-img {
   height: 95px;
 }
 
-.banner .skills h3 {
+.banner__service-text {
   margin-top: 10px;
 }
 
@@ -163,15 +160,15 @@ html {
   background-color: #bed7f3;
 }
 
-.projectsVisible {
+.projects__visible {
   margin: 25px 0;
 }
 
-.projectsSection {
+.projects__section {
   margin-top: 45px;
 }
 
-.projectsList {
+.projects__list {
   display: grid;
   grid-template-columns: 32% 32% 32%;
   align-items: center;
@@ -179,7 +176,7 @@ html {
   margin: 15px 35px;
 }
 
-.projectItem {
+.project {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -196,7 +193,7 @@ html {
               0 16px 16px rgba(0,0,0,0.12);
 }
 
-.projectItem .projectInfo {
+.project__info {
   width: 100%;
   display: flex;
   align-items: center;
@@ -204,42 +201,42 @@ html {
   gap: 35px;
 }
 
-.projectItem .projectInfo .projectImg {
+.project__img {
   height: 95px;
 }
 
-.projectItem .projectInfo .projectImg.portfolio {
+.project__img--portfolio {
   background-color: #242a3a;
   padding: 5px;
   border-radius: 15px;
 }
 
-.projectItem .projectLink.link {
+.project__link--link {
   cursor: pointer;
   transition: all .8s;
 }
 
-.projectItem .projectLink:hover {
+.project__link--link:hover {
   opacity: .7;
 }
 
-.projectItem .projectInfo .projectFrameworks {
+.project__frameworks {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 15px;
 }
 
-.projectItem .description {
+.project__description {
   text-align: justify;
   padding: 0 10px;
 }
 
-.logoFramework {
+.project__framework-logo {
   width: 25px;
   padding: 0 5px;
 }
 
-.ghButton, .privateButton {
+.project__gh-button, .project__private-button {
   width: 75%;
   display: flex;
   align-items: center;
@@ -254,18 +251,18 @@ html {
   transition: all .5s;
 }
 
-.privateButton {
+.project__private-button {
   background-color: #3e3074;
   opacity: .6;
   border: 0;
 }
 
-.privateButton img {
+.project__private-button-img {
   padding: 0;
   margin-right: 15px;
 }
 
-.ghButton img {
+.project__gh-button-img {
   background-color: white;
   padding: 0;
   border: 2px solid white;
@@ -273,7 +270,7 @@ html {
   margin-right: 15px;
 }
 
-.ghButton:hover {
+.project__gh-button:hover {
   background-color: white;
   color: var(--github-color);
   border-color: var(--github-color);
@@ -290,7 +287,7 @@ html {
   background-color: #aaf0b3;
 }
 
-.education .item, .experience .item {
+.education__item, .experience__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,7 +295,7 @@ html {
   padding: 25px 0;
 }
 
-.education .item img, .experience .item img {
+.education__item-img, .experience__item-img {
   width: 145px;
 }
 
@@ -323,30 +320,30 @@ html {
   background-color: #f0dd70;
 }
 
-.contact .contactContent {
+.contact__content {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.contact .message  {
+.contact__message  {
   margin: 25px 0;
 }
 
-.contact .icon {
+.contact__icon {
   font-size: 40px;
   padding: 20px;
   border: 3px solid black;
   border-radius: 99px;
 }
 
-.contact a {
+.contact__item {
   text-decoration: none;
   color: black;
   transition: all .5s;
 }
 
-.contact a:hover {
+.contact__item:hover {
   opacity: .4;
 }
 
@@ -361,23 +358,23 @@ html {
   color: white;
 }
 
-.footer .footerIcon {
+.footer__icon {
   width: 35px;
 }
 
 /* --------------- RESPONSIVE --------------- */
 @media screen and (max-width: 1050px) {
-  .projectsList {
+  .projects__list {
     grid-template-columns: auto auto;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .projectItem .projectInfo .projectImg {
+  .project__img {
     height: 85px;
   }
 
-  .projectItem .projectInfo .projectFrameworks {
+  .project__frameworks {
     grid-template-columns: auto auto;
   }
 }
@@ -390,7 +387,7 @@ html {
     justify-content: space-between;
   }
   
-  .menu .openMenu {
+  .menu__open-button {
     position: relative;
     display: flex;
     align-items: center;
@@ -400,12 +397,12 @@ html {
     transition: all 1s;
   }
 
-  .menu .openMenu:hover {
+  .menu__open-button:hover {
     background-color: white;
     color: #3e3074;
   }
   
-  .menu .menuOptions {
+  .menu__options {
     position: absolute;
     right: -35%;
     padding: 25px 0;
@@ -420,58 +417,58 @@ html {
     transition: all 1s;
   }
 
-  .menu .menuOptions.visible {
+  .menu__options--visible {
     right: 0;
   }
 
-  .menu .menuOptions .navLink {
+  .menu__item {
     border: none;
   }
 
-  .menu .menuOptions  .navLink:hover {
+  .menu__item:hover {
     transform: translateX(-10px);
     color: var(--highlight-color);
 }
 
-  .banner .header h1 {
+  .banner__greet {
     font-size: 25px;
   }
 
-  .banner .header h2 {
+  .banner__welcome {
     font-size: 20px;
   }
 
-  .projectsList {
+  .projects__list {
     grid-template-columns: auto;
     margin: 15px 10px;
   }
 
-  .projectItem .projectInfo .projectFrameworks {
+  .project__frameworks {
     grid-template-columns: auto auto auto;
   }
 
-  .education .item, .experience .item {
+  .education__item, .experience__item {
     display: flex;
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .banner .header {
+  .banner__header {
     flex-direction: column;
     gap: 25px;
   }
   
-  .ghLogoHeader {
+  .banner__github-logo {
     margin-left: 0px;
   }
 
-  .banner .skills {
+  .banner__skills {
     flex-direction: column;  
     gap: 25px;
   }
 
-  .banner .service {
+  .banner__service {
     width: 90%;
     display: flex;
     align-items: center;
@@ -479,17 +476,13 @@ html {
     gap: 25px
   }
 
-  .banner .skills h3 {
+  .banner__service-text {
     margin-bottom: 15px;
-  }
-
-  .contact img {
-    width: 80px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .contact .contactContent {
+  .contact__content {
     display: grid;
     grid-template-columns: auto auto;
     gap: 25px

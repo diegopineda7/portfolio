@@ -17,28 +17,28 @@ export default function Menu(props) {
 
   return (
     <div className='menu'>
-      <a className='navLink img' href='#home' onClick={hideMenu} >
+      <a className='menu__item menu__item--img' href='#home' onClick={hideMenu} >
         <img
           src={logo}
           alt='Diego Pineda'
-          className='portfolioIcon'
+          className='menu__logo'
         />
       </a>
       <div>
-        <div className='openMenu' onClick={handleMenu}>
+        <div className='menu__open-button' onClick={handleMenu}>
           <FontAwesomeIcon icon={faBars} />
         </div>
-        <div className={menuVisible ? 'menuOptions visible' : 'menuOptions'}>
-          <a className='navLink' href='#projects' onClick={hideMenu} >
+        <div className={menuVisible ? 'menu__options menu__options--visible' : 'menu__options'}>
+          <a className='menu__item' href='#projects' onClick={hideMenu} >
             {lang === 'es' ? 'PROYECTOS' : 'PROJECTS'}
           </a>
-          <a className='navLink' href='#education' onClick={hideMenu} >
+          <a className='menu__item' href='#education' onClick={hideMenu} >
             {lang === 'es' ? 'EDUCACIÓN' : 'EDUCATION'}
           </a>
-          <a className='navLink' href='#experience' onClick={hideMenu} >
+          <a className='menu__item' href='#experience' onClick={hideMenu} >
             {lang === 'es' ? 'EXPERIENCIA' : 'EXPERIENCE'}
           </a>
-          <a className='navLink' href='#contact' onClick={hideMenu} >
+          <a className='menu__item' href='#contact' onClick={hideMenu} >
             {lang === 'es' ? 'CONTACTO' : 'CONTACT'}
           </a>
         </div>

@@ -7,9 +7,9 @@ export default function Footer() {
       <img
         src={logo}
         alt='Diego Pineda'
-        className='footerIcon'
+        className='footer__icon'
       />
-      <div className='info'>
+      <div className='footer__info'>
         <h4>Diego Alberto Pineda Medina - 2020</h4>
         <h5>Bucaramanga, Santander, Colombia</h5>
       </div>

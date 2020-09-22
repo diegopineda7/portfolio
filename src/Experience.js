@@ -13,15 +13,16 @@ export default function Experience(props) {
             : 'WORK EXPERIENCE'
         }
       </h2>
-      <div className='item'>
-        <img src={ipred} alt='Instituto de Proyección Regional y Educación a Distancia' />
-        <div className='description'>
+      <div className='experience__item'>
+        <img src={ipred} alt='Instituto de Proyección Regional y Educación a Distancia' className='experience__item-img' />
+        <div className='experience__description'>
           <h3>
             {
               lang === 'es'
                 ? 'Instituto de Proyección Regional y Educación a Distancia - IPRED'
                 : 'Institute for Regional Projection and Distance Education - IPRED'
-            }</h3>
+            }
+          </h3>
           <h3>
             {
               lang === 'es'
