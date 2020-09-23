@@ -443,7 +443,11 @@ html {
   .menu__item:hover {
     transform: translateX(-10px);
     color: var(--highlight-color);
-}
+  }
+
+  .menu__item--img:hover {
+    transform: translateX(5px);
+  }
 
   .banner__greet {
     font-size: 25px;
