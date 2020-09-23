@@ -4,26 +4,36 @@ import 'tippy.js/dist/tippy.css';
 import logoGH from './assets/frameworkLogos/github.png';
 import lock from './assets/lock.png';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+
+
 export default function Project(props) {
   const { project, FMLogosKeys, FMLogosValues, PJLogos, lang } = props;
   const { name, image, github, descriptionEs, descriptionEn, frameworks, link } = project;
 
   return (
     <div className='project'>
-      <h2>{name}</h2>
+      <div className='project__header'>
+        <h2>{name}</h2>
+        {
+          link !== '' &&
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href={link !== '' ? link : null}
+            className={link !== '' ? 'project__link project__link--link' : 'project__link'}
+          >
+            <FontAwesomeIcon icon={faExternalLinkAlt} className='project__plus' />
+          </a>
+        }
+      </div>
       <div className='project__info' >
-        <a
-          rel='noopener noreferrer'
-          target='_blank'
-          href={link !== '' ? link : null}
-          className={link !== '' ? 'project__link project__link--link' : 'project__link'}
-        >
-          <img
-            src={PJLogos[image]}
-            alt={name}
-            className={image === 'portfolio' ? 'project__img project__img--portfolio' : 'project__img'}
-          />
-        </a>
+        <img
+          src={PJLogos[image]}
+          alt={name}
+          className={image === 'portfolio' ? 'project__img project__img--portfolio' : 'project__img'}
+        />
         <div className='project__frameworks'>
           {
             frameworks.map(framework => {
@@ -86,6 +96,6 @@ export default function Project(props) {
             }
           </p>
       }
-    </div>
+    </div >
   )
 }

@@ -6,17 +6,18 @@
     "projects": [
       {
         "id": 0,
-        "name": "React Basic",
-        "github": "https://github.com/diegopineda7/react-basic",
-        "image": "react",
+        "name": "Products App",
+        "github": "https://github.com/diegopineda7/mern-products-app",
+        "image": "store",
         "frameworks": [
           "Node.js",
           "React JS",
+          "MongoDB",
           "Git"
         ],
-        "descriptionEs": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
-        "descriptionEn": "Application that integrates different basic concepts of React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
-        "link": "https://diegopineda7.github.io/react-basic/"
+        "descriptionEs": "Aplicación con REST API para agregar productos a una base de datos y mostrarlos en el front-end.",
+        "descriptionEn": "Application with REST API to add products to a database and show them on the front-end.",
+        "link": "https://mern-productsapp.herokuapp.com/"
       },
       {
         "id": 1,
@@ -35,6 +36,19 @@
       },
       {
         "id": 2,
+        "name": "React Basic",
+        "github": "https://github.com/diegopineda7/react-basic",
+        "image": "react",
+        "frameworks": [
+          "React JS",
+          "Git"
+        ],
+        "descriptionEs": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
+        "descriptionEn": "Application that integrates different basic concepts of React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
+        "link": "https://diegopineda7.github.io/react-basic/"
+      },
+      {
+        "id": 3,
         "name": "Portfolio",
         "github": "https://github.com/diegopineda7/portfolio",
         "image": "portfolio",
@@ -91,7 +105,6 @@
         "github": "https://github.com/diegopineda7/ProgressBuild",
         "image": "progress",
         "frameworks": [
-          "Node.js",
           "React Native",
           "MongoDB",
           "Git"
@@ -106,7 +119,6 @@
         "github": "https://github.com/diegopineda7/contact-manager",
         "image": "contact",
         "frameworks": [
-          "Node.js",
           "React Native",
           "Firebase",
           "Git"

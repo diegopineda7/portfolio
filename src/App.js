@@ -19,6 +19,7 @@ import logoFIREBASE from './assets/frameworkLogos/firebase.png';
 import logoPG from './assets/frameworkLogos/postgres.png';
 import logoSHEETS from './assets/frameworkLogos/sheets.png';
 // PROJECT LOGOS
+import store from './assets/projectIcons/store.png';
 import claudia from './assets/projectIcons/claudia.png';
 import portfolio from './assets/projectIcons/portfolio.png';
 import youtrain from './assets/projectIcons/youtrain.png';
@@ -41,6 +42,7 @@ const FMLogosKeys = Object.keys(FMLogos);
 const FMLogosValues = Object.values(FMLogos);
 
 const PJLogos = {
+  'store': store,
   'claudia': claudia,
   'portfolio': portfolio,
   'youtrain': youtrain,

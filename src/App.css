@@ -193,6 +193,30 @@ html {
               0 16px 16px rgba(0,0,0,0.12);
 }
 
+.project__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px
+}
+
+.project__link--link {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .6s;
+}
+
+.project__link--link:hover {
+  transform: scale(1.2);
+}
+
+.project__plus {
+  font-size: 28px;
+  color: #2f274d;
+}
+
 .project__info {
   width: 100%;
   display: flex;
@@ -209,15 +233,6 @@ html {
   background-color: #242a3a;
   padding: 5px;
   border-radius: 15px;
-}
-
-.project__link--link {
-  cursor: pointer;
-  transition: all .8s;
-}
-
-.project__link--link:hover {
-  opacity: .7;
 }
 
 .project__frameworks {
