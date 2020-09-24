@@ -19,6 +19,13 @@ export default function Experience(props) {
           <h3>
             {
               lang === 'es'
+                ? 'Desarrollador web'
+                : 'Web developer'
+            }
+          </h3>
+          <h3>
+            {
+              lang === 'es'
                 ? 'Instituto de Proyección Regional y Educación a Distancia - IPRED'
                 : 'Institute for Regional Projection and Distance Education - IPRED'
             }
@@ -28,13 +35,6 @@ export default function Experience(props) {
               lang === 'es'
                 ? 'Universidad Industrial de Santander - UIS'
                 : 'Industrial University of Santander - UIS'
-            }
-          </h3>
-          <h3>
-            {
-              lang === 'es'
-                ? 'Desarrollador web'
-                : 'Web developer'
             }
           </h3>
           <h4>

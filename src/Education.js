@@ -15,15 +15,15 @@ export default function Education(props) {
           <h3>
             {
               lang === 'es'
-                ? 'Universidad Industrial de Santander - UIS'
-                : 'Industrial University of Santander - UIS'
+                ? 'Ingeniería de Sistemas'
+                : 'Systems engineering '
             }
           </h3>
           <h3>
             {
               lang === 'es'
-                ? 'Ingeniería de Sistemas'
-                : 'Systems engineering '
+                ? 'Universidad Industrial de Santander - UIS'
+                : 'Industrial University of Santander - UIS'
             }
           </h3>
           <h4>
