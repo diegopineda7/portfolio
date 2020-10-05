@@ -6,18 +6,16 @@
     "projects": [
       {
         "id": 0,
-        "name": "Products App",
-        "github": "https://github.com/diegopineda7/mern-products-app",
-        "image": "store",
+        "name": "Weather forecast",
+        "github": "https://github.com/diegopineda7/weather-forecast",
+        "image": "react",
         "frameworks": [
-          "Node.js",
           "React JS",
-          "MongoDB",
           "Git"
         ],
-        "descriptionEs": "Aplicación con REST API para agregar productos a una base de datos y mostrarlos en el front-end.",
-        "descriptionEn": "Application with REST API to add products to a database and show them on the front-end.",
-        "link": "https://mern-productsapp.herokuapp.com/"
+        "descriptionEs": "Aplicación para ver el clima actual y el pronóstico para 3 días de Bogotá. Interfaz gráfica construida por disenador web.",
+        "descriptionEn": "Application to see the current weather and forescast for next 3 days in Bogotá. User Interface build by a web designer.",
+        "link": "https://github.com/diegopineda7/weather-forecast"
       },
       {
         "id": 1,
@@ -36,16 +34,18 @@
       },
       {
         "id": 2,
-        "name": "React Basic",
-        "github": "https://github.com/diegopineda7/react-basic",
-        "image": "react",
+        "name": "Products App",
+        "github": "https://github.com/diegopineda7/mern-products-app",
+        "image": "store",
         "frameworks": [
+          "Node.js",
           "React JS",
+          "MongoDB",
           "Git"
         ],
-        "descriptionEs": "Aplicación que integra diferentes conceptos básicos de React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
-        "descriptionEn": "Application that integrates different basic concepts of React (ToDo App, Navigation, Counter, Fetch data, Hooks).",
-        "link": "https://diegopineda7.github.io/react-basic/"
+        "descriptionEs": "Aplicación con REST API para agregar productos a una base de datos y mostrarlos en el front-end.",
+        "descriptionEn": "Application with REST API to add products to a database and show them on the front-end.",
+        "link": "https://mern-productsapp.herokuapp.com/"
       },
       {
         "id": 3,
