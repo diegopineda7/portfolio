@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 import './App.css';
-// COMPONENTS
-import projects from './projects.json';
-import Menu from './Menu';
-import Banner from './Banner';
-import Education from './Education';
-import Experience from './Experience';
-import Contact from './Contact';
-import Project from './Project';
-import Footer from './Footer';
-// FRAMEWORK LOGOS
-import logoRJS from './assets/frameworkLogos/react.png';
-import logoRN from './assets/frameworkLogos/react-native.png';
-import logoNODE from './assets/frameworkLogos/node.png';
+import logoFIREBASE from './assets/frameworkLogos/firebase.png';
 import logoGIT from './assets/frameworkLogos/git.png';
 import logoMONGO from './assets/frameworkLogos/mongo.png';
-import logoFIREBASE from './assets/frameworkLogos/firebase.png';
+import logoNODE from './assets/frameworkLogos/node.png';
 import logoPG from './assets/frameworkLogos/postgres.png';
+import logoRN from './assets/frameworkLogos/react-native.png';
+// FRAMEWORK LOGOS
+import logoRJS from './assets/frameworkLogos/react.png';
 import logoSHEETS from './assets/frameworkLogos/sheets.png';
+import claudia from './assets/projectIcons/claudia.png';
+import contact from './assets/projectIcons/contact.png';
+import ipred from './assets/projectIcons/ipred.png';
+import portfolio from './assets/projectIcons/portfolio.png';
+import progress from './assets/projectIcons/progress.png';
 // PROJECT LOGOS
 import store from './assets/projectIcons/store.png';
-import claudia from './assets/projectIcons/claudia.png';
-import portfolio from './assets/projectIcons/portfolio.png';
+import weather from './assets/projectIcons/weather.png';
 import youtrain from './assets/projectIcons/youtrain.png';
-import ipred from './assets/projectIcons/ipred.png';
-import react from './assets/projectIcons/react.png';
-import contact from './assets/projectIcons/contact.png';
-import progress from './assets/projectIcons/progress.png';
+import Banner from './Banner';
+import Contact from './Contact';
+import Education from './Education';
+import Experience from './Experience';
+import Footer from './Footer';
+import Menu from './Menu';
+import Project from './Project';
+// COMPONENTS
+import projects from './projects.json';
 
 const FMLogos = {
   'React JS': logoRJS,
@@ -47,9 +47,9 @@ const PJLogos = {
   'portfolio': portfolio,
   'youtrain': youtrain,
   'ipred': ipred,
-  'react': react,
   'contact': contact,
-  'progress': progress
+  'progress': progress,
+  'weather': weather
 };
 
 function App() {
